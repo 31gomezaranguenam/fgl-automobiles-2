@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FGL Automobiles - Distribuidor Oficial Porsche</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>FGL Automobiles</h1>
+                <p class="owner-name">Francisco Gómez Loarte</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenido a FGL Automobiles</h2>
+            <p>Distribuidor exclusivo de vehículos Porsche de lujo</p>
+            <button class="cta-button" onclick="scrollToSection('catalogo')">Ver Catálogo</button>
+        </div>
+        <div class="hero-background">
+            <img src="https://source.unsplash.com/featured/?porsche" alt="Porsche deportivo">
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about">
+        <div class="container">
+            <h2>Sobre FGL Automobiles</h2>
+            <p>Somos una empresa dedicada a la venta de vehículos Porsche de alta gama. Con más de 15 años de experiencia en el mercado automotriz de lujo, nos especializamos en ofrecer los mejores modelos de Porsche con un servicio personalizado y garantía de calidad.</p>
+            <div class="about-info">
+                <div class="info-box">
+                    <h3>🏆 Experiencia</h3>
+                    <p>Más de 15 años en venta de vehículos de lujo</p>
+                </div>
+                <div class="info-box">
+                    <h3>✅ Garantía</h3>
+                    <p>Garantía completa en todos nuestros vehículos</p>
+                </div>
+                <div class="info-box">
+                    <h3>💼 Profesionalismo</h3>
+                    <p>Atención personalizada y asesoramiento experto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="features">
+        <div class="container">
+            <h2>Lo que nos hace diferentes</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Atención personalizada</h3>
+                    <p>Te acompañamos en cada paso, desde la elección del modelo hasta la entrega final. Nuestro equipo de expertos Porsche está disponible para asesorarte.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Vehículos certificados</h3>
+                    <p>Cada Porsche en nuestro catálogo pasa por una revisión completa y se entrega con garantía y mantenimiento certificado.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Opciones de financiamiento</h3>
+                    <p>Ofrecemos planes de financiamiento flexibles y personalizados para ayudarte a encontrar la mejor forma de adquirir tu Porsche.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Servicios premium</h3>
+                    <p>Contamos con servicios de postventa, mantenimiento y personalización para mantener tu Porsche siempre en condiciones excepcionales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Vehículos -->
+    <section id="catalogo" class="catalog">
+        <div class="container">
+            <h2>Nuestro Catálogo Porsche</h2>
+            <div class="vehicles-grid">
+                <!-- Porsche 911 -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-911" alt="Porsche 911">
+                    <div class="vehicle-info">
+                        <h3>Porsche 911 Carrera</h3>
+                        <p class="year">2024</p>
+                        <p class="description">El legendario 911 Carrera con motor bóxer de 6 cilindros, 385 CV y diseño icónico.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 4.2s</span>
+                            <span>Velocidad máxima: 295 km/h</span>
+                        </div>
+                        <p class="price">$95,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('911')">Más Información</button>
+                    </div>
+                </div>
+
+                <!-- Porsche Cayenne -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-cayenne" alt="Porsche Cayenne">
+                    <div class="vehicle-info">
+                        <h3>Porsche Cayenne Turbo</h3>
+                        <p class="year">2024</p>
+                        <p class="description">SUV de lujo con motor turbo V8 de 550 CV, diseño agresivo y tecnología avanzada.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 3.8s</span>
+                            <span>Velocidad máxima: 290 km/h</span>
+                        </div>
+                        <p class="price">$115,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('cayenne')">Más Información</button>
+                    </div>
+                </div>
+
+                <!-- Porsche Panamera -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-panamera" alt="Porsche Panamera">
+                    <div class="vehicle-info">
+                        <h3>Porsche Panamera Turbo</h3>
+                        <p class="year">2024</p>
+                        <p class="description">Sedán deportivo con motor V8 biturbo de 550 CV, confort y rendimiento excepcionales.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 3.8s</span>
+                            <span>Velocidad máxima: 305 km/h</span>
+                        </div>
+                        <p class="price">$105,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('panamera')">Más Información</button>
+                    </div>
+                </div>
+
+                <!-- Porsche 718 Boxster -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-718-boxster" alt="Porsche 718 Boxster">
+                    <div class="vehicle-info">
+                        <h3>Porsche 718 Boxster</h3>
+                        <p class="year">2024</p>
+                        <p class="description">Roadster deportivo de dos plazas con motor bóxer de 4 cilindros, manejo ágil y preciso.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 4.5s</span>
+                            <span>Velocidad máxima: 285 km/h</span>
+                        </div>
+                        <p class="price">$65,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('boxster')">Más Información</button>
+                    </div>
+                </div>
+
+                <!-- Porsche Taycan -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-taycan" alt="Porsche Taycan">
+                    <div class="vehicle-info">
+                        <h3>Porsche Taycan Turbo</h3>
+                        <p class="year">2024</p>
+                        <p class="description">Sedán eléctrico deportivo con 680 CV, aceleración instantánea y tecnología de punta.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 2.8s</span>
+                            <span>Velocidad máxima: 260 km/h</span>
+                        </div>
+                        <p class="price">$125,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('taycan')">Más Información</button>
+                    </div>
+                </div>
+
+                <!-- Porsche Macan -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-macan" alt="Porsche Macan">
+                    <div class="vehicle-info">
+                        <h3>Porsche Macan Turbo</h3>
+                        <p class="year">2024</p>
+                        <p class="description">SUV compacto deportivo con motor V6 biturbo, interior de lujo y tecnología conectada.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 4.1s</span>
+                            <span>Velocidad máxima: 273 km/h</span>
+                        </div>
+                        <p class="price">$85,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('macan')">Más Información</button>
+                    </div>
+                </div>
+
+                <!-- Porsche 911 Turbo S -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-911-turbo-s" alt="Porsche 911 Turbo S">
+                    <div class="vehicle-info">
+                        <h3>Porsche 911 Turbo S</h3>
+                        <p class="year">2024</p>
+                        <p class="description">Superdeportivo con motor 3.8L biturbo de 640 CV, tecnología Porsche Active Aerodynamics y tracción integral.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 2.7s</span>
+                            <span>Velocidad máxima: 330 km/h</span>
+                        </div>
+                        <p class="price">$185,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('turbo-s')">Más Información</button>
+                    </div>
+                </div>
+
+                <!-- Porsche 918 Spyder -->
+                <div class="vehicle-card">
+                    <img src="https://source.unsplash.com/featured/?porsche-918-spyder" alt="Porsche 918 Spyder">
+                    <div class="vehicle-info">
+                        <h3>Porsche 918 Spyder</h3>
+                        <p class="year">2015</p>
+                        <p class="description">Híbrido de alto rendimiento con motor V8 y propulsión eléctrica, diseño vanguardista y tecnología de pista.</p>
+                        <div class="specs">
+                            <span>0-100 km/h: 2.6s</span>
+                            <span>Velocidad máxima: 345 km/h</span>
+                        </div>
+                        <p class="price">$845,000</p>
+                        <button class="info-btn" onclick="showVehicleDetails('918')">Más Información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimonios de Clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Mi experiencia con FGL Automobiles fue insuperable. Compré un Porsche 911 y el servicio fue impecable: desde la atención hasta la entrega."</p>
+                    <p class="testimonial-author">— Ana López, Madrid</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Recomiendo totalmente esta distribuidora. Me ayudaron a elegir el modelo ideal y el proceso de financiamiento fue transparente y rápido."</p>
+                    <p class="testimonial-author">— Carlos Ruiz, Barcelona</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"El equipo de FGL me brindó un servicio exclusivo y profesional. Estoy muy satisfecho con mi Porsche Taycan y su soporte posterior a la venta."</p>
+                    <p class="testimonial-author">— Marta Sánchez, Valencia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Detalles del Vehículo -->
+    <div id="vehicleModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div class="modal-footer">
+                <button class="contact-btn" onclick="showContactForm()">Contáctanos para más información</button>
+                <button class="close-btn" onclick="closeModal()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>FGL Automobiles</h3>
+                    <p><strong>Propietario:</strong> Francisco Gómez Loarte</p>
+                    <div class="contact-details">
+                        <p>📍 <strong>Dirección:</strong> Calle Principal 123, Ciudad, País</p>
+                        <p>📞 <strong>Teléfono:</strong> +34 900 123 456</p>
+                        <p>✉️ <strong>Email:</strong> info@fglautomobiles.com</p>
+                        <p>🕒 <strong>Horario:</strong> Lunes a Viernes 10:00 - 19:00</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+                    <h3>Envíanos un mensaje</h3>
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu email" required>
+                    <input type="tel" placeholder="Tu teléfono" required>
+                    <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FGL Automobiles - Distribuidor Oficial Porsche</p>
+            <p>Propietario: Francisco Gómez Loarte | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
